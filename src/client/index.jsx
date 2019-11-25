@@ -9,6 +9,7 @@ store.subscribe(() => {});
 ReactDom.render(
   <Provider store={store}>
     <App />
-  </Provider>,
+  </Provider>
+  ,
   document.getElementById('root')
 );

@@ -1,6 +1,5 @@
 import { createLogger } from 'redux-logger';
 import { createStore, combineReducers, applyMiddleware } from 'redux';
-import { mathReducer } from './reducers/mathReducer';
-import { userReducer } from './reducers/userReducer';
+import { noteReducer } from './reducers/noteReducer';
 
-export const store = createStore(combineReducers({ mathReducer, userReducer }), {}, applyMiddleware(createLogger()));
+export const store = createStore(combineReducers({ noteReducer }), {}, applyMiddleware(createLogger()));

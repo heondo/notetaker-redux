@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import PostAddIcon from '@material-ui/icons/PostAdd';
 import MenuIcon from '@material-ui/icons/Menu';
 import {
@@ -67,7 +68,9 @@ function AppDrawer(props) {
     <div>
       <Grid className={classes.drawerHeader} container item alignItems="center" justify="space-between">
         <Grid container item justify="center" xs>
-          <PostAddIcon fontSize="large" style={{ marginTop: '5px' }} />
+          <Link to="/new">
+            <PostAddIcon fontSize="large" style={{ marginTop: '5px', color: 'black' }} />
+          </Link>
           <Grid item>
             <Typography component="div">
               <Box fontSize={18}>
